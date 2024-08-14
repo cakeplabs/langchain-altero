@@ -6,7 +6,7 @@ They provide additional functionality that may be inconvenient while using LangC
 
 ## Overview
 
-`langchain_altero` adalah versi lokal dari library [`langchain-teddynote`] (https://github.com/teddylee777/langchain-teddynote), yang dirancang untuk menjadi sumber terbuka di bawah lisensi AGPL-3.0. Pustaka ini telah diadaptasi agar lebih sesuai dengan kebutuhan audiens khusus kami sambil mempertahankan fungsionalitas inti dari paket `langchain-teddynote` yang asli.
+`langchain_altero` adalah versi lokal dari library [`langchain-teddynote`](https://github.com/teddylee777/langchain-teddynote), yang dirancang untuk menjadi sumber terbuka di bawah lisensi AGPL-3.0. Pustaka ini telah diadaptasi agar lebih sesuai dengan kebutuhan audiens khusus kami sambil mempertahankan fungsionalitas inti dari paket `langchain-teddynote` yang asli.
 
 ### Output streaming
 
