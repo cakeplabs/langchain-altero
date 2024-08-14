@@ -1,12 +1,12 @@
 # langchain-altero
 
-Berbagai paket Python utilitas yang digunakan dalam tutorial LangChain Bahasa Indonesia.
+Various utility Python packages used in LangChain Bahasa Indonesia tutorials.
 
-Paket-paket ini menyediakan fungsionalitas tambahan yang mungkin tidak nyaman saat menggunakan LangChain.
+They provide additional functionality that may be inconvenient while using LangChain.
 
 ## Overview
 
-`langchain_altero` is a localized version of the [`langchain-teddynote`](https://github.com/teddylee777/langchain-teddynote) library, designed to be fully open-source under the AGPL-3.0 license. This library has been adapted to better suit the needs of our specific audience while retaining the core functionality of the original `langchain-teddynote` package.
+`langchain_altero` adalah versi lokal dari library [`langchain-teddynote`] (https://github.com/teddylee777/langchain-teddynote), yang dirancang untuk menjadi sumber terbuka di bawah lisensi AGPL-3.0. Pustaka ini telah diadaptasi agar lebih sesuai dengan kebutuhan audiens khusus kami sambil mempertahankan fungsionalitas inti dari paket `langchain-teddynote` yang asli.
 
 ### Output streaming
 
@@ -20,7 +20,7 @@ from langchain_openai import ChatOpenAI
 llm = ChatOpenAI(
     temperatur = 0.1, # kreativitas (0.0 ~ 2.0)
     model_name = "gpt-4o-mini", # nama model
-    api_key=api_key # 
+    api_key=api_key # api key openai
 )
 answer = llm.stream("Tolong beritahu saya 10 tempat terindah di Korea dan alamatnya!")
 
