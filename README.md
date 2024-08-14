@@ -1,8 +1,8 @@
 # langchain-altero
 
-Various utility Python packages used in LangChain Bahasa Indonesia tutorials.
+Berbagai paket Python utilitas yang digunakan dalam tutorial LangChain Bahasa Indonesia.
 
-They provide additional functionality that may be inconvenient while using LangChain.
+Paket-paket ini menyediakan fungsionalitas tambahan yang mungkin tidak nyaman saat menggunakan LangChain.
 
 ## Overview
 
@@ -22,7 +22,7 @@ llm = ChatOpenAI(
     model_name = "gpt-4o-mini", # nama model
     api_key=api_key # api key openai
 )
-answer = llm.stream("Tolong beritahu saya 10 tempat terindah di Korea dan alamatnya!")
+answer = llm.stream("Tolong beritahu saya 10 tempat terindah di Indonesia dan alamatnya!")
 
 # hanya untuk output streaming
 stream_response(jawaban)
