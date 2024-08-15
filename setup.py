@@ -1,9 +1,14 @@
 from setuptools import find_packages, setup
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name="langchain-altero",
     version="0.0.1",
-    description="LangChain Helper Library",
+    description="Streamline your AI workflows with langChain-altero, the essential toolkit for seamless LangChain integration.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Dicky Umardhani",
     author_email="dicky@alterolab.com",
     url="https://github.com/cakeplabs/langchain-altero",

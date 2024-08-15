@@ -3,7 +3,7 @@ import requests
 
 def stopwords():
     # Baca file 'indonesia_stopwords.txt' dari URL GitHub untuk mendapatkan stopwords Bahasa Indonesia.
-    file_url = "https://raw.githubusercontent.com/teddylee777/langchain-teddynote/main/assets/korean_stopwords.txt"
+    file_url = "https://raw.githubusercontent.com/cakeplabs/langchain-altero/main/assets/indonesia_stopwords.txt"
 
     # Dapatkan file terminologi dari internet.
     response = requests.get(file_url)
