@@ -30,7 +30,7 @@ class HWPLoader(BaseLoader):
         """Load data from an HWP file and extract a table.
 
         Yields:
-            Document: Extracted documents
+            Document: Extracted document
         """
         load_file = olefile.OleFileIO(self.file_path)
         file_dir = load_file.listdir()
@@ -114,7 +114,7 @@ class HWPLoader(BaseLoader):
 
     @staticmethod
     def _parse_record_header(header_bytes: bytes) -> tuple:
-        """Parse record headers."""
+        """Parses the record header."""
         header = struct.unpack_from("<I", header_bytes)[0]
         rec_type = header & 0x3FF
         rec_len = (header >> 20) & 0xFFF

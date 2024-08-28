@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from typing import Any, Callable, Dict, Iterable, List, Optional
 from operator import itemgetter
-import numpy as np
+from typing import Any, Callable, Dict, Iterable, List, Optional
 
+import numpy as np
 from langchain_core.callbacks import CallbackManagerForRetrieverRun
 from langchain_core.documents import Document
 from langchain_core.pydantic_v1 import Field
@@ -69,7 +69,7 @@ class KiwiBM25Retriever(BaseRetriever):
             from rank_bm25 import BM25Okapi
         except ImportError:
             raise ImportError(
-                "Could not import rank_bm25, please install with `pip install' "
+                "Could not import rank_bm25, please install with `pip install "
                 "rank_bm25`."
             )
 
