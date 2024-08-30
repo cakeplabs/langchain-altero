@@ -17,6 +17,7 @@ setup(
         "kiwipiepy",
         "konlpy",
         "rank_bm25",
+        "nltk",
         "pinecone-client[grpc]",
         "pinecone-text",
         "olefile",
