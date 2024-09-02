@@ -13,12 +13,12 @@ try:
     from nltk.tokenize import word_tokenize
 except ImportError:
     raise ImportError(
-        "Could not import kiwipiepy, please install with `pip install " "kiwipiepy`."
+        "Could not import nltk"
     )
 
 
 def nltk_preprocessing_func(text: str) -> List[str]:
-    return [token.form for token in word_tokenize(text)]
+    return [token for token in word_tokenize(text)]
 
 
 def default_preprocessing_func(text: str) -> List[str]:
@@ -86,7 +86,7 @@ class NLTKBM25Retriever(BaseRetriever):
         documents: Iterable[Document],
         *,
         bm25_params: Optional[Dict[str, Any]] = None,
-        preprocess_func: Callable[[str], List[str]] = kiwi_preprocessing_func,
+        preprocess_func: Callable[[str], List[str]] = nltk_preprocessing_func,
         **kwargs: Any,
     ) -> NLTKBM25Retriever:
         """

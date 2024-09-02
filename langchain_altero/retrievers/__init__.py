@@ -7,12 +7,11 @@ if TYPE_CHECKING:
 
 _module_lookup = {
     "KiwiBM25Retriever": "retrievers.kiwi_bm25",
-    "KkmaBM25Retriever": "retrievers.konlpy_bm25",
-    "OktBM25Retriever": "retrievers.konlpy_bm25",
+    "NltkBM25Retriever": "retrievers.nltk_bm25"
 }
 
 from .kiwi_bm25 import KiwiBM25Retriever
-from .konlpy_bm25 import KkmaBM25Retriever, OktBM25Retriever
+from .nltk_bm25 import NLTKBM25Retriever
 
 
 def __getattr__(name: str) -> Any:
@@ -24,6 +23,5 @@ def __getattr__(name: str) -> Any:
 
 __all__ = [
     "KiwiBM25Retriever",
-    "KkmaBM25Retriever",
-    "OktBM25Retriever",
+    "NltkBM25Retriever"
 ]
