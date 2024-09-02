@@ -128,14 +128,14 @@ class NLTKBM25Retriever(BaseRetriever):
         return sorted(range(len(seq)), key=seq.__getitem__, reverse=reverse)
 
     def search_with_score(self, query: str, top_k=None):
-        normalized_score = NltkBM25Retriever.softmax(
+        normalized_score = NLTKBM25Retriever.softmax(
             self.vectorizer.get_scores(self.preprocess_func(query))
         )
 
         if top_k is None:
             top_k = self.k
 
-        score_indexes = NltkBM25Retriever.argsort(normalized_score, True)
+        score_indexes = NLTKBM25Retriever.argsort(normalized_score, True)
 
         docs_with_scores = []
         for i, doc in enumerate(self.docs):
